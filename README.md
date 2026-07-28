@@ -28,7 +28,7 @@
 ![Homepage screenshot](assets/screenshots/hero-section.png)
 
 ### Services
-![about screenshot](assets/screenshots/about.png), ![about screenshot](assets/screenshots/about.png), ![about screenshot](assets/screenshots/about.png)
+![about screenshot](assets/screenshots/about.png), ![services screenshot](assets/screenshots/pest-lab.png), ![services screenshot](assets/screenshots/cleaning-section.png)
 
 ### Live Demo
 ![Site walkthrough GIF](assets/screenshots/katx-video.gif)
