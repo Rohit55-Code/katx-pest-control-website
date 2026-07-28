@@ -25,13 +25,13 @@
 <div align="center">
 
 ### Homepage
-![Homepage screenshot](assets/screenshots/homepage.png)
+![Homepage screenshot](assets/screenshots/hero-section.png)
 
 ### Live Demo
-![Site walkthrough GIF](assets/screenshots/demo.gif)
+![Site walkthrough GIF](assets/screenshots/katx-video.gif)
 
 ### Mobile View
-<img src="assets/screenshots/mobile-view.png" width="320" alt="Mobile view screenshot"/>
+<img src="assets/screenshots/katx-mobile.png" width="320" alt="Mobile view screenshot"/>
 
 </div>
 
