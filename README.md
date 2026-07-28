@@ -27,8 +27,8 @@
 ### Homepage
 ![Homepage screenshot](assets/screenshots/hero-section.png)
 
-### More to check
-![Homepage screenshot](assets/screenshots/hero-section.png)
+### Services
+![Homepage screenshot](assets/screenshots/about.png)
 
 ### Live Demo
 ![Site walkthrough GIF](assets/screenshots/katx-video.gif)
