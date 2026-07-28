@@ -31,7 +31,7 @@
 ![Site walkthrough GIF](assets/screenshots/katx-video.gif)
 
 ### Mobile View
-<img src="assets/screenshots/katx-mobile.png" width="320" alt="Mobile view screenshot"/>
+<img src="assets/screenshots/katx-mobile.gif" width="320" alt="Mobile view screenshot"/>
 
 </div>
 
