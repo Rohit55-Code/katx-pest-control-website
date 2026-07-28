@@ -1,0 +1,1164 @@
+/* ============================================================
+   KATX PEST CONTROL — responsive.css
+   Breakpoints:
+     XS  Mobile Portrait  : max  480px
+     SM  Mobile Landscape : 481px – 767px
+     MD  Tablet           : 768px – 1023px
+     LG  Laptop           : 1024px – 1279px
+     XL  Desktop+         : 1280px+
+   ============================================================ */
+
+
+/* ============================================================
+   ✅  LARGE DESKTOP  (1280px +)
+   Tighten max-widths, bump font scale slightly
+   ============================================================ */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+        padding: 0 40px;
+    }
+
+    .hero-title {
+        font-size: 6.5rem;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .pest-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-inner {
+        grid-template-columns: 2.2fr 1fr 1fr 1fr;
+    }
+}
+
+
+/* ============================================================
+   ✅  LAPTOP  (1024px – 1279px)
+   Slightly compressed — still multi-column
+   ============================================================ */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .container {
+        padding: 0 32px;
+    }
+
+    /* Hero */
+    .hero-title {
+        font-size: 5rem;
+    }
+
+    .hero-content {
+        max-width: 680px;
+    }
+
+    /* Services — keep 3 cols but tighter */
+    .services-grid {
+        gap: 18px;
+    }
+
+    .service-card {
+        padding: 28px 22px;
+    }
+
+    /* Why Us */
+    .why-inner {
+        gap: 50px;
+    }
+
+    /* Pest grid — keep 4 cols */
+    .pest-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+    }
+
+    /* Process */
+    .process-step {
+        padding: 28px 18px;
+    }
+
+    /* Contact */
+    .contact-inner {
+        gap: 50px;
+    }
+
+    .contact-form-wrap {
+        padding: 32px;
+    }
+
+    /* Footer */
+    .footer-inner {
+        grid-template-columns: 1.8fr 1fr 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+
+/* ============================================================
+   ✅  TABLET  (768px – 1023px)
+   2-column layouts, hidden hamburger optional, reflow begins
+   ============================================================ */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding: 0 28px;
+    }
+
+    /* ---- Navbar ---- */
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    .nav-cta {
+        padding: 9px 16px;
+        font-size: 0.85rem;
+    }
+
+    .logo img {
+        height: 44px;
+    }
+
+    /* ---- Hero ---- */
+    .hero {
+        padding-top: 90px;
+    }
+
+    .hero-content {
+        padding: 70px 28px;
+        max-width: 100%;
+    }
+
+    .hero-title {
+        font-size: 3.8rem;
+    }
+
+    .hero-sub {
+        font-size: 1rem;
+    }
+
+    .hero-actions {
+        gap: 12px;
+    }
+
+    .btn-lg {
+        padding: 8px 28px;
+        font-size: 1rem;
+    }
+
+    .hero-stats {
+        gap: 20px;
+    }
+
+    .stat-num {
+        font-size: 1.8rem;
+    }
+
+
+
+    /* ---- Section headers ---- */
+    .section-head h2 {
+        font-size: 2.6rem;
+    }
+
+    .section-head p {
+        font-size: 1rem;
+    }
+
+    .section-tag {
+        font-size: 0.8rem;
+    }
+
+    /* ---- Services — 2 columns ---- */
+    .services {
+        padding: 72px 0;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* ---- Why Us — stack ---- */
+    .why-us {
+        padding: 72px 0;
+    }
+
+    .why-inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .why-text h2 {
+        font-size: 2.6rem;
+    }
+
+    .why-card-main {
+        padding: 32px;
+    }
+
+    /* ---- Pest grid — 2×4 ---- */
+    .pests {
+        padding: 72px 0;
+    }
+
+    .pest-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    /* ---- Process — 2+2 wrap ---- */
+    .process {
+        padding: 72px 0;
+    }
+
+    .process-steps {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: auto auto;
+        gap: 16px;
+        align-items: center;
+    }
+
+    /* Hide middle arrows on second row */
+    .process-steps .process-arrow:last-of-type {
+        display: none;
+    }
+
+    .process-step {
+        max-width: 100%;
+    }
+
+    /* ---- Contact — stack ---- */
+    .contact {
+        padding: 72px 0;
+    }
+
+    .contact-inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .contact-text h2 {
+        font-size: 2.6rem;
+    }
+
+    .contact-form-wrap {
+        padding: 32px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* ---- Cleaning Section ---- */
+    .cleaning {
+        padding: 72px 0;
+    }
+
+    .services-sub-head {
+        margin: 36px 0 20px;
+    }
+
+    .services-sub-head h3 {
+        font-size: 1.4rem;
+    }
+
+    /* ---- Map ---- */
+    .map-section {
+        padding: 60px 0 0;
+    }
+
+    .map-embed iframe {
+        height: 300px;
+    }
+
+    /* ---- Footer — 2×2 ---- */
+    .footer-inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-logo {
+        height: 44px;
+    }
+
+    .footer-address {
+        font-size: 0.82rem;
+    }
+}
+
+
+/* ============================================================
+   ✅  MOBILE LANDSCAPE  (481px – 767px)
+   Hamburger on, single col begins, careful spacing
+   ============================================================ */
+@media (min-width: 425px) and (max-width: 767px) {
+    
+    .container {
+        padding: 0 20px;
+    }
+
+    /* ---- Navbar ---- */
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .nav-links,
+    .nav-cta {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        position: relative;
+        z-index: 1001;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    /* Full-screen overlay menu */
+    .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(10, 10, 10, 0.98);
+        align-items: center;
+        justify-content: center;
+        gap: 36px;
+        z-index: 999;
+    }
+
+    .nav-links.open a {
+        font-size: 1.8rem;
+        color: var(--white);
+        letter-spacing: 1px;
+    }
+
+    .nav-links.open a:hover {
+        color: var(--teal);
+    }
+
+    /* ---- Hero ---- */
+    .hero {
+        padding-top: 80px;
+        min-height: auto;
+    }
+
+    .hero-content {
+        padding: 60px 20px 40px;
+    }
+
+    .hero-badge {
+        font-size: 0.8rem;
+        padding: 5px 14px;
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+        margin-bottom: 16px;
+    }
+
+    .hero-sub {
+        font-size: 0.95rem;
+        margin-bottom: 28px;
+    }
+
+    .hero-actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 36px;
+    }
+
+    .btn-lg {
+        padding: 8px 20px;
+        font-size: 0.95rem;
+    }
+
+    .hero-stats {
+        gap: 16px;
+        flex-wrap: wrap;
+
+    }
+
+    .stat-num {
+        font-size: 1.7rem;
+    }
+
+    .stat-label {
+        font-size: 0.7rem;
+    }
+
+    .stat-divider {
+        height: 36px;
+    }
+
+    .hero-scroll-hint {
+        display: none;
+    }
+
+
+
+    /* ---- Section headers ---- */
+    .section-head {
+        margin-bottom: 40px;
+    }
+
+    .section-head h2 {
+        font-size: 2.2rem;
+    }
+
+    .section-head p {
+        font-size: 0.95rem;
+    }
+
+    /* ---- Services — 2 cols ---- */
+    .services {
+        padding: 64px 0;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .service-card {
+        padding: 24px 18px;
+    }
+
+    .service-icon {
+        font-size: 2.2rem;
+        margin-bottom: 14px;
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .service-card p {
+        font-size: 0.88rem;
+    }
+
+    /* ---- Why Us ---- */
+    .why-us {
+        padding: 64px 0;
+    }
+
+    .why-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .why-text h2 {
+        font-size: 2.2rem;
+    }
+
+    .why-features {
+        gap: 20px;
+    }
+
+    .why-icon {
+        font-size: 1.7rem;
+    }
+
+    .why-card-main {
+        padding: 28px 24px;
+    }
+
+    /* ---- Pest grid — 2 cols ---- */
+    .pests {
+        padding: 64px 0;
+    }
+
+    .pest-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .pest-card {
+        padding: 22px 16px;
+    }
+
+    .pest-emoji {
+        font-size: 2rem;
+    }
+
+    .pest-card h4 {
+        font-size: 1rem;
+    }
+
+    /* ---- Process ---- */
+    .process {
+        padding: 64px 0;
+    }
+
+    .process-steps {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .process-step {
+        max-width: 100%;
+        padding: 28px 22px;
+        text-align: left;
+    }
+
+    .step-num {
+        font-size: 2.8rem;
+        text-align: left;
+    }
+
+    .process-arrow {
+        text-align: center;
+        transform: rotate(90deg);
+        font-size: 1.4rem;
+    }
+
+    /* ---- Contact ---- */
+    .contact {
+        padding: 64px 0;
+    }
+
+    .contact-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact-text h2 {
+        font-size: 2.2rem;
+    }
+
+    .contact-form-wrap {
+        padding: 28px 22px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    /* ---- Cleaning ---- */
+    .cleaning {
+        padding: 64px 0;
+    }
+
+    .services-sub-head {
+        margin: 32px 0 18px;
+    }
+
+    .services-sub-head h3 {
+        font-size: 1.3rem;
+    }
+
+    /* ---- Map ---- */
+    .map-section {
+        padding: 52px 0 0;
+    }
+
+    .map-embed iframe {
+        height: 260px;
+    }
+
+    /* ---- Footer ---- */
+    .footer {
+        padding-top: 60px;
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-logo {
+        height: 42px;
+    }
+
+    .footer-bottom .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 6px;
+    }
+}
+
+
+/* ============================================================
+   ✅  MOBILE PORTRAIT  (≤ 480px)
+   Single column, max readability, touch-friendly
+   ============================================================ */
+@media (max-width: 480px) {
+    html {
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    /* ---- Navbar ---- */
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .nav-links,
+    .nav-cta {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        position: relative;
+        z-index: 1001;
+    }
+
+    .logo img {
+        height: 36px;
+        padding: 3px 6px;
+    }
+
+    .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(10, 10, 10, 0.99);
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        z-index: 999;
+    }
+
+    .nav-links.open a {
+        font-size: 1.6rem;
+        color: var(--white);
+    }
+
+    .nav-links.open a:hover {
+        color: var(--teal);
+    }
+
+    /* Close button hint inside mobile menu */
+    .nav-links.open::after {
+        content: '✕ Tap to close';
+        position: absolute;
+        bottom: 36px;
+        color: var(--gray);
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        font-family: var(--font-display);
+    }
+
+    /* ---- Hero ---- */
+    .hero {
+        padding-top: 72px;
+        min-height: 100svh;
+    }
+
+    .hero-content {
+        padding: 48px 16px 32px;
+    }
+
+    .hero-badge {
+        font-size: 0.75rem;
+        padding: 4px 12px;
+    }
+
+    .hero-title {
+        font-size: 2.4rem;
+        line-height: 1.05;
+        margin-bottom: 14px;
+    }
+
+    .hero-sub {
+        font-size: 0.9rem;
+        margin-bottom: 24px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 32px;
+    }
+
+    .btn-lg {
+        padding: 8px 20px;
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-outline {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-stats {
+        gap: 0;
+        justify-content: space-around;
+        background: none;
+        border: none;
+        border-radius: var(--radius);
+        padding: 18px 12px;
+    }
+
+    .stat-num {
+        font-size: 1.6rem;
+    }
+
+    .stat-label {
+        font-size: 0.65rem;
+    }
+
+    .stat-divider {
+        height: 40px;
+    }
+
+    .hero-scroll-hint {
+        display: none;
+    }
+
+    /* ---- Section global ---- */
+    .section-head {
+        margin-bottom: 32px;
+    }
+
+    .section-head h2 {
+        font-size: 2rem;
+    }
+
+    .section-head p {
+        font-size: 0.88rem;
+    }
+
+    .section-tag {
+        font-size: 0.75rem;
+        padding: 3px 12px;
+    }
+
+    /* ---- Services ---- */
+    .services {
+        padding: 56px 0;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .service-card {
+        padding: 24px 20px;
+        border-radius: var(--radius);
+    }
+
+    .service-icon {
+        font-size: 2rem;
+        margin-bottom: 12px;
+    }
+
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .service-card p {
+        font-size: 0.88rem;
+    }
+
+    .services-sub-head {
+        margin: 28px 0 16px;
+    }
+
+    .services-sub-head h3 {
+        font-size: 1.2rem;
+    }
+
+    /* ---- Cleaning ---- */
+    .cleaning {
+        padding: 56px 0;
+    }
+
+    /* ---- Why Us ---- */
+    .why-us {
+        padding: 56px 0;
+    }
+
+    .why-inner {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .why-text h2 {
+        font-size: 2rem;
+    }
+
+    .why-intro {
+        font-size: 0.9rem;
+    }
+
+    .why-features {
+        gap: 18px;
+    }
+
+    .why-feature {
+        gap: 14px;
+    }
+
+    .why-icon {
+        font-size: 1.6rem;
+    }
+
+    .why-feature h4 {
+        font-size: 1rem;
+    }
+
+    .why-feature p {
+        font-size: 0.85rem;
+    }
+
+    .why-card-main {
+        padding: 24px 20px;
+    }
+
+    .wc-header {
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .wc-title {
+        font-size: 1.2rem;
+    }
+
+    .wc-list li {
+        font-size: 0.88rem;
+    }
+
+    /* ---- Pest Library ---- */
+    .pests {
+        padding: 56px 0;
+    }
+
+    .pest-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .pest-card {
+        padding: 20px 14px;
+    }
+
+    .pest-emoji {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+
+    .pest-card h4 {
+        font-size: 0.95rem;
+    }
+
+    .pest-card p {
+        font-size: 0.8rem;
+    }
+
+    /* ---- Process ---- */
+    .process {
+        padding: 56px 0;
+    }
+
+    .process-steps {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .process-step {
+        max-width: 100%;
+        min-width: 0;
+        padding: 24px 20px;
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .step-num {
+        font-size: 2.2rem;
+        flex-shrink: 0;
+        margin-bottom: 0;
+        min-width: 52px;
+        opacity: 0.5;
+    }
+
+    .step-content h3 {
+        font-size: 1.1rem;
+        margin-bottom: 6px;
+    }
+
+    .step-content p {
+        font-size: 0.85rem;
+    }
+
+    .process-arrow {
+        display: none;
+    }
+
+    /* clean flow on mobile */
+
+    /* ---- Contact ---- */
+    .contact {
+        padding: 56px 0;
+    }
+
+    .map-section {
+        padding: 48px 0 0;
+    }
+
+    .map-embed iframe {
+        height: 220px;
+    }
+
+    .contact-inner {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .contact-text h2 {
+        font-size: 2rem;
+    }
+
+    .contact-text p {
+        font-size: 0.9rem;
+    }
+
+    .contact-details {
+        gap: 18px;
+    }
+
+    .contact-detail {
+        gap: 12px;
+    }
+
+    .cd-icon {
+        font-size: 1.5rem;
+    }
+
+    .cd-value {
+        font-size: 1rem;
+    }
+
+    .contact-form-wrap {
+        padding: 22px 18px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 13px 14px;
+        font-size: 0.92rem;
+    }
+
+    .contact-form .btn-lg {
+        padding: 16px;
+        font-size: 1rem;
+    }
+
+    /* ---- Footer ---- */
+    .footer {
+        padding-top: 52px;
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding-bottom: 40px;
+    }
+
+    .footer-logo {
+        height: 38px;
+    }
+
+    .footer-brand p {
+        font-size: 0.85rem;
+    }
+
+    .footer-col h4 {
+        font-size: 0.9rem;
+        margin-bottom: 14px;
+    }
+
+    .footer-col ul li a,
+    .footer-col ul li {
+        font-size: 0.85rem;
+    }
+
+    .footer-socials a {
+        width: 34px;
+        height: 34px;
+    }
+
+    .footer-bottom .container {
+        flex-direction: column;
+        text-align: center;
+        font-size: 0.78rem;
+        gap: 4px;
+    }
+
+    /* ---- WhatsApp Float ---- */
+    /* Move slightly so it doesn't overlap content */
+    #waFloat>div {
+        bottom: 20px !important;
+        right: 16px !important;
+        width: 52px !important;
+        height: 52px !important;
+        font-size: 1.4rem !important;
+    }
+}
+
+
+/* ============================================================
+   ✅  VERY SMALL PHONES  (≤ 360px)
+   Galaxy S8, old iPhones in portrait
+   ============================================================ */
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-actions .btn-lg {
+        font-size: 0.9rem;
+        padding: 8px 18px;
+    }
+
+    .section-head h2 {
+        font-size: 1.8rem;
+    }
+
+    .why-text h2,
+    .contact-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .stat-num {
+        font-size: 1.4rem;
+    }
+
+    .stat-label {
+        font-size: 0.6rem;
+    }
+
+    .services-grid {
+        gap: 10px;
+    }
+
+    .service-card {
+        padding: 20px 16px;
+    }
+
+    .pest-grid {
+        gap: 10px;
+    }
+
+    .container {
+        padding: 0 14px;
+    }
+}
+
+
+/* ============================================================
+   ✅  PRINT STYLES
+   Clean printout without dark backgrounds
+   ============================================================ */
+@media print {
+    body {
+        background: #fff;
+        color: #000;
+    }
+
+    .navbar,
+    .hero-scroll-hint,
+    .contact,
+    .footer-socials {
+        display: none;
+    }
+
+    .hero {
+        background: #fff;
+        min-height: auto;
+        padding: 40px 0;
+    }
+
+    .hero-bg {
+        display: none;
+    }
+
+    .hero-title,
+    .section-head h2 {
+        color: #000;
+    }
+
+    .accent {
+        color: #15a3a3;
+    }
+
+    .service-card,
+    .pest-card,
+    .process-step,
+    .why-card-main {
+        border: 1px solid #ddd;
+        background: #f9f9f9;
+        color: #000;
+        break-inside: avoid;
+    }
+
+    .service-card p,
+    .pest-card p,
+    .why-feature p,
+    .step-content p {
+        color: #444;
+    }
+
+    .footer {
+        background: #fff;
+        border-top: 1px solid #ddd;
+    }
+
+    .footer-col ul li,
+    .footer-col ul li a,
+    .footer-brand p {
+        color: #555;
+    }
+
+    .footer-bottom {
+        border-top: 1px solid #ddd;
+    }
+
+    .footer-bottom .container {
+        color: #666;
+    }
+}
